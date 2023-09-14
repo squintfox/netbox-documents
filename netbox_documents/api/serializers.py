@@ -4,7 +4,7 @@ from netbox.api.serializers import NetBoxModelSerializer, WritableNestedSerializ
 from ..models import SiteDocument, DeviceDocument, DeviceTypeDocument, CircuitDocument 
 from dcim.api.nested_serializers import NestedSiteSerializer, NestedDeviceSerializer, NestedDeviceTypeSerializer 
 from circuits.api.nested_serializers import NestedCircuitSerializer
-from .fields import UploadableBase64FileField
+from fields import UploadableBase64FileField
 
 # Site Document Serializer
 class SiteDocumentSerializer(NetBoxModelSerializer):
