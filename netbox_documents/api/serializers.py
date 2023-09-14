@@ -44,6 +44,7 @@ class DeviceDocumentSerializer(NetBoxModelSerializer):
     )
 
     device = NestedDeviceSerializer()
+    document = UploadableBase64FileField(required=False)
 
     class Meta:
         model = DeviceDocument
@@ -72,6 +73,7 @@ class DeviceTypeDocumentSerializer(NetBoxModelSerializer):
     )
 
     device_type = NestedDeviceTypeSerializer()
+    document = UploadableBase64FileField(required=False)
 
     class Meta:
         model = DeviceTypeDocument
@@ -88,6 +90,7 @@ class CircuitDocumentSerializer(NetBoxModelSerializer):
     )
 
     circuit = NestedCircuitSerializer()
+    document = UploadableBase64FileField(required=False)
 
     class Meta:
         model = CircuitDocument
